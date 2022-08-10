@@ -13,7 +13,7 @@ import CastingSetup from '../Components/CastingSetup'
 const Setup = ({ darkMode, setDarkMode }) => {
     const [current, setCurrent] = useState('Web');
     const notActiveBtn = 'transition-all duration-300 ease-in-out dark:hover:bg-white hover:bg-blue-darkmdbg hover:text-white dark:hover:text-blue-lightmd md:w-[200px] w-full md:p-6 p-4 dark:text-white text-blue-lightmd  rounded-md dark:bg-blue-darkmdbg bg-white shadow-sm flex flex-col items-center justify-center gap-4'
-    const Activebtn = 'ransition-all duration-300 ease-in-out dark:hover:bg-white dark:hover:text-blue-lightmd md:w-[200px] w-full md:p-6 p-4 rounded-md dark:text-white text-blue-lightmd dark:bg-white dark:text-blue-darkmdbg bg-blue-darkmdbg text-white shadow-sm flex flex-col items-center justify-center gap-4'
+    const Activebtn = 'transition-all duration-300 ease-in-out dark:hover:bg-white dark:hover:text-blue-lightmd md:w-[200px] w-full md:p-6 p-4 rounded-md dark:text-white text-blue-lightmd dark:bg-white dark:text-blue-darkmdbg bg-blue-darkmdbg text-slate-100 shadow-sm flex flex-col items-center justify-center gap-4'
 
     //references
     const WebRef = useRef(null);
