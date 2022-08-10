@@ -9,9 +9,9 @@ const MobileSetup = () => {
         <div>
             <h1 className='text-2xl font-semibold'>Get IPTV on your Mobile and Tablet</h1>
             <p className='my-4'>Explore TV in all your Devices</p>
-            <div className='flex flex-row gap-40 flex-wrap items-center justify-between'>
+            <div className=' md:flex-none flex-wrap flex flex-row  items-center  justify-center'>
                 {/* Left content */}
-                <div className='flex flex-col gap-8'>
+                <div className='flex flex-col gap-8 md:w-[300px] w-[90%]'>
                     <div className='flex flex-col gap-2'>
                         <div className='flex gap-4'>
                             <h1 className='text-2xl font-semibold'>IOS</h1>
@@ -58,7 +58,7 @@ const MobileSetup = () => {
 
                 </div>
                 {/* right image */}
-                <div className='flex items-center justify-center'>
+                <div className='flex items-center justify-center '>
                     <div className='md:w-[40%] w-auto'>
                         <img src={MobileSetupImage} alt="" />
                     </div>
