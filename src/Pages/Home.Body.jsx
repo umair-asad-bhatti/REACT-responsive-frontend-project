@@ -204,17 +204,20 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                 </div>
             </div> */}
             {/* Custom card slider */}
-            <div className='block relative z-40  h-[300px]  items-center overflow-x-hidden  justify-center '>
-                <div onClick={handlePrevious} className='absolute top-[50%] translate-y-[-50%] left-2 md:left-32'><AiOutlineArrowLeft color='white' fontSize={30} /></div>
-                {
-                    customSmallCaardData.map((item, index) => {
-                        if (index == currentSlide)
-                            return <div className='absolute left-[50%] translate-x-[-50%]'>
-                                <CustomSmallCard key={index} {...item} />
-                            </div>
-                    })
-                }
-                <div onClick={handleNext} className='absolute top-[50%] translate-y-[-50%] right-2 md:right-32'><AiOutlineArrowRight color='white' fontSize={30} /></div>
+            <div className='z-10'>
+                <div className='relative h-[300px] w-[90vw] mx-auto z-10 items-center overflow-x-hidden justify-center '>
+
+                    <div onClick={handlePrevious} className='absolute top-[50%] translate-y-[-50%] left-2 md:left-32'><AiOutlineArrowLeft color='white' fontSize={30} /></div>
+                    {
+                        customSmallCaardData.map((item, index) => {
+                            if (index == currentSlide)
+                                return <div className='absolute left-[50%] translate-x-[-50%]'>
+                                    <CustomSmallCard key={index} {...item} />
+                                </div>
+                        })
+                    }
+                    <div onClick={handleNext} className='absolute top-[50%] translate-y-[-50%] right-2 md:right-32'><AiOutlineArrowRight color='white' fontSize={30} /></div>
+                </div>
             </div>
 
             {/* text and headings below small custom cards on web page */}

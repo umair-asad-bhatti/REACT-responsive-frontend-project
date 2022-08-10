@@ -31,11 +31,11 @@ const Home = ({ darkMode, setDarkMode }) => {
         <div className='flex items-center w-screen justify-center'>
             {/* Pc version navbar */}
             <div>
-                <div className='lg:block w-full  sticky top-0 hidden'>
+                <div className='lg:block w-full z-20 sticky top-0 hidden'>
                     <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
                 </div>
                 {/* Mobile version Navbar expandable */}
-                <div className={`lg:hidden mx-auto flex justify-between items-center px-4 py-4 w-full fixed top-0 ${Scrolled ? 'bg-blue-lightmd' : ''}  ${Scrolled ? 'dark:bg-blue-darkmd' : ''}`}>
+                <div className={`lg:hidden mx-auto z-20  flex justify-between items-center px-4 py-4 w-full fixed top-0 ${Scrolled ? 'bg-blue-lightmd' : ''}  ${Scrolled ? 'dark:bg-blue-darkmd' : ''}`}>
                     <img src={Logo} alt="Logo" />
                     <div className='rounded-full flex items-center justify-center w-8 h-8 bg-white '>
                         <div className='p-4'>
