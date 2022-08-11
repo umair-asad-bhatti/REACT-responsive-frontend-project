@@ -32,7 +32,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                     <Link to='/channel'><p >CHANNELS</p></Link>
                     <Link to='/setup'><p >SETUP</p></Link>
                     <Link to='/reseller'><p >RESELLERS</p></Link>
-                    <Link to='/'><p >AFFILIATES</p></Link>
+                    <Link to='/tutorial'><p >TUTORIALS</p></Link>
 
                 </div>
                 <div className='flex items-center justify-between gap-4 relative'>

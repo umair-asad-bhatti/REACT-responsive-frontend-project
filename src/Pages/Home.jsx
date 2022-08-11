@@ -13,6 +13,7 @@ import Reseller from './Reseller'
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom'
 import Setup from './Setup'
+import Tutorial from './Tutorial'
 
 const Home = ({ darkMode, setDarkMode }) => {
     const [toggleSidebar, setToggleSidebar] = useState(false)
@@ -101,6 +102,7 @@ const Home = ({ darkMode, setDarkMode }) => {
                     <Route path='/channel' element={<Channel />} />
                     <Route path='/reseller' element={<Reseller darkMode={darkMode} setDarkMode={setDarkMode} />} />
                     <Route path='/setup' element={<Setup darkMode={darkMode} setDarkMode={setDarkMode} />} />
+                    <Route path='/tutorial' element={<Tutorial />} />
                 </Routes>
 
                 <div className='w-full dark:bg-blue-darkmd bg-white p-8'>
