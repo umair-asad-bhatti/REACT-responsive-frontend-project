@@ -160,7 +160,7 @@ const Channel = () => {
                         <AiOutlineSearch fontSize={30} color='black' className='absolute right-0 top-[50%] translate-y-[-50%]' />
                         <input placeholder='Search' type="search " className='w-full border-none outline-none p-2 rounded-md shadow-md' value={search} onChange={(e) => setSearch(e.target.value)} />
                     </div>
-                    <div className=' bg-red-400 flex flex-wrap gap-8 items-start justify-start'>
+                    <div className='  flex flex-wrap gap-8 items-start justify-start'>
 
                         {
 
