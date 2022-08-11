@@ -155,19 +155,21 @@ const Channel = () => {
                     </div>
 
                 </div>
-                <div className='md:w-[50%] w-[90%]   rounded-md shadow-md h-[600px] overflow-y-auto flex flex-row flex-wrap gap-8 items-center justify-between p-6  dark:bg-blue-darkmd bg-gray-50  '>
-                    <div className='w-full  relative'>
+                <div className='md:w-[50%] w-[90%]   rounded-md shadow-md h-[600px] overflow-y-auto flex flex-row flex-wrap gap-8 items-start justify-start p-6  dark:bg-blue-darkmd bg-gray-50  '>
+                    <div className='w-full  relative bg-red-200'>
                         <AiOutlineSearch fontSize={30} color='black' className='absolute right-0 top-[50%] translate-y-[-50%]' />
                         <input placeholder='Search' type="search " className='w-full border-none outline-none p-2 rounded-md shadow-md' value={search} onChange={(e) => setSearch(e.target.value)} />
                     </div>
+                    <div className=' bg-red-400 flex flex-wrap gap-8 items-start justify-start'>
 
-                    {
+                        {
 
-                        filteredArray && filteredArray.map((animal, index) => {
+                            filteredArray && filteredArray.map((animal, index) => {
 
-                            return <h1 key={index} className=' w-[40%] rounded-md shadow-md  h[100px] px-4 py-0.5 dark:bg-blue-lightmdbg dark:text-white  bg-white text-blue-lightmdbg'>{animal}</h1>
-                        })
-                    }
+                                return <h1 key={index} className=' w-[40%] rounded-md shadow-md  h[100px] px-4 py-0.5 dark:bg-blue-lightmdbg dark:text-white  bg-white text-blue-lightmdbg'>{animal}</h1>
+                            })
+                        }
+                    </div>
                 </div>
 
             </div>
