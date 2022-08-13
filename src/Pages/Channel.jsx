@@ -164,7 +164,7 @@ const Channel = () => {
 
                             filteredArray && filteredArray.map((animal, index) => {
 
-                                return <h1 key={index} className='md:w-[350px] w-[120px] rounded-md shadow-md  h-[40px] px-4 py-0.5 dark:bg-[#262F4A] dark:text-white  bg-[#E2E4E8] text-black text-2xl overflow-hidden'>{animal}</h1>
+                                return <h1 key={index} className='md:w-[340px] w-[200px] rounded-md shadow-md  h-[40px] px-4 py-0.5 dark:bg-[#262F4A] dark:text-white  bg-[#E2E4E8] text-black text-2xl overflow-hidden'>{animal}</h1>
                             })
                         }
                     </div>
