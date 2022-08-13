@@ -10,12 +10,12 @@ const Channel = () => {
     const [filteredArray, setfilteredArray] = useState(null)
 
     const Animals = [
-        "Aardvark",
+        "Aardvarksdfdsfdsfdsfs",
         "Albatross",
-        "Alligator",
+        "Alligatorsdfdsfdsfdsfds",
         "Alpaca",
         "Ant",
-        "Anteater",
+        "Anteatersdfdsfdsfdsfd",
         "Antelope",
         "Ape",
         "Armadillo",
@@ -124,7 +124,7 @@ const Channel = () => {
         <div className='md:w-screen lg:w-auto  my-20 '>
             <h1 className='text-center font-bold text-6xl text-white'>Our Full IPTV Channels List</h1>
             <p className='text-white mt-6 text-center font-semibold text-lg'>An Easy Access And Super Simple IPTV Services For Your Devives</p>
-            <div className='flex md:flex-row my-12  flex-col items-center justify-center gap-4 sm:w-auto  md:w-[90%] lg:w-[1400px] mx-auto'>
+            <div className='flex md:flex-row my-12  flex-col items-center justify-center gap-4 sm:w-auto  md:w-[90%] lg:max-w-[1400px] mx-auto'>
                 {/* left menu */}
                 <div className='dark:bg-[#040E2E] overflowy p-1  md:h-[600px] md:w-[30%] w-[90%] flex flex-col items-center justify-start  gap-2 bg-[#FFFFFF] rounded-md shadow-md'>
                     {/* /button 1 */}
@@ -153,18 +153,18 @@ const Channel = () => {
 
 
                 </div>
-                <div className='md:w-[50%] lg:w-[800px] w-[90%]  rounded-md shadow-md h-[600px] overflow-y-auto flex flex-row flex-wrap gap-8 items-start justify-center p-6  dark:bg-blue-darkmd bg-[#FFFFFF] '>
+                <div className='md:w-[50%] lg:max-w-[800px] w-[90%]  rounded-md shadow-md h-[600px] overflow-y-auto flex flex-row flex-wrap gap-8 items-start justify-center p-1 dark:bg-blue-darkmd bg-[#FFFFFF] '>
                     <div className='w-full  relative'>
                         <AiOutlineSearch fontSize={30} color='black' className='absolute right-0 top-[50%] translate-y-[-50%]' />
                         <input placeholder='Search' type="search " className='w-full border-none outline-none p-2 rounded-md shadow-md' value={search} onChange={(e) => setSearch(e.target.value)} />
                     </div>
-                    <div className='flex flex-wrap gap-8 items-center justify-between'>
+                    <div className='grid  grid-cols-2 gap-2'>
 
                         {
 
                             filteredArray && filteredArray.map((animal, index) => {
 
-                                return <h1 key={index} className='md:w-[340px] w-[200px] rounded-md shadow-md  h-[40px] px-4 py-0.5 dark:bg-[#262F4A] dark:text-white  bg-[#E2E4E8] text-black text-2xl overflow-hidden'>{animal}</h1>
+                                return <h1 key={index} className='max-w-[400px] rounded-md shadow-md  h-[40px] px-4 py-0.5 dark:bg-[#262F4A] dark:text-white  bg-[#E2E4E8] text-black text-2xl overflow-hidden'>{animal}</h1>
                             })
                         }
                     </div>

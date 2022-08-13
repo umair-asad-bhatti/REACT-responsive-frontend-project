@@ -101,7 +101,9 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
     }
     const handlePrevious = () => {
         const lenght = customSmallCaardData.length;
+
         setCurrentSlide(currentSlide === 0 ? lenght - 1 : currentSlide - 1)
+
     }
     useEffect(() => {
         setFAQ(questions);
@@ -126,7 +128,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                 <img className='w-[900px] h-[450px]' src={MainPic} alt="" />
             </div >
             {/* ICONS section */}
-            < div className='my-12 h-auto md:my-8 dark:bg-blue-darkmd bg-white w-[70vw] lg:w-[940px] mx-auto flex flex-row items-center justify-center flex-wrap shadow-md rounded-md p-8 gap-10' >
+            < div className='my-12 h-auto md:my-8 dark:bg-blue-darkmd bg-white w-[90vw] lg:max-w-[940px] mx-auto grid md:grid-cols-4 shadow-md rounded-md p-8 gap-10' >
                 <div className='flex  gap-2 items-center justify-center'>
                     <img src={player} alt="" />
                     <h1 className='w-24 md:font-semibold md:text-xl dark:text-white text-blue-darkmd'>8000+ TV Channels</h1>
@@ -147,7 +149,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
             </div >
             {/* Flex section */}
 
-            <div className='my-16 h-auto md:my-28 dark:bg-blue-darkmd bg-white w-[70vw] lg:w-[940px] mx-auto flex flex-row items-center justify-center flex-wrap shadow-md  rounded-md py-6 px-4 gap-10'>
+            <div className='my-16 h-auto md:my-28 dark:bg-blue-darkmd bg-white w-[90vw] lg:max-w-[940px] mx-auto grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1  shadow-md  rounded-md py-6 px-4 gap-10'>
 
                 {
                     CustomHeadingRawData.map((item) => {
@@ -156,24 +158,20 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                     })
                 }
             </div>
-            <div className='gap-8 flex flex-col mx-auto  items-center justify-center  w-[70vw] lg:w-[940px]'>
-
-                <div className='w-full flex flex-row items-center justify-start gap-4'>
-                    <h1 className='text-white font-bold text-4xl'>Uptime</h1>
-                    <h2 className='text-white font-semibold text-2xl'>Last 90 Days</h2>
-                </div>
+            <div className='gap-8 flex flex-col mx-auto  items-center justify-center flex-wrap  w-[90vw] lg:w-[940px]'>
+                <h1 className='text-white font-bold text-4xl'>Uptime</h1>
+                <h2 className='text-white font-semibold text-2xl'>Last 90 Days</h2>
                 <div className='w-full p-6 flex flex-col gap-8 dark:bg-blue-darkmd bg-white rounded-md shadow-sm'>
-
                     {
                         progrssBarData.map((item, index) => {
-                            return <ProgressBar key={index} mainHeading={item.mainHeading} perHeading={item.perHeading} instruction={item.instruction} />
+                            console.log(index)
+                            return <div className={`${index != 2 ? 'border-gray-50 border-b-2' : ''}`}><ProgressBar key={index} mainHeading={item.mainHeading} perHeading={item.perHeading} instruction={item.instruction} /></div>
                         })
                     }
-
                 </div>
             </div>
             {/* Three cards on a column with image with flex */}
-            <div className='my-20 w-[70vw]  lg:w-[940px] mx-auto h-auto flex flex-col items-center justify-center gap-8'>
+            <div className='my-20 w-[90vw]  lg:w-[940px] mx-auto h-auto flex flex-col items-center justify-center gap-8'>
                 <CustomCard1 mainHeading={"8000+"} subHeading="Live Tv Channels" subPara={CustomCard1Para} buttonHeading="Discover Channel List" image={mainimage4} />
                 <CustomCard2 mainHeading={"EPG"} subHeading="In Most Channels" subPara={CustomCard1Para} buttonHeading="Discover Channel List" image={mainimage3} />
                 <CustomCard1 mainHeading={"Thousands"} subHeading="Of Movies and Series" subPara={CustomCard1Para} buttonHeading="join Us Now" image={mainimage2} />
@@ -211,7 +209,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                     {
                         customSmallCaardData.map((item, index) => {
                             if (index == currentSlide)
-                                return <div className='absolute left-[50%] translate-x-[-50%]'>
+                                return <div className=' absolute left-[50%] translate-x-[-50%]'>
                                     <CustomSmallCard key={index} {...item} />
                                 </div>
                         })
@@ -246,14 +244,13 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                         <h1 className='text-white text-3xl font-bold'>Get My Instant Access Now</h1>
                     </button>
                 </div>
-
             </div>
             <p className='text-white font-medium text-center my-2'>30 Day Money Back Guarantee</p>
             <div className='mx-auto my-28 w-[80vw] lg:w-[940px] flex items-center justify-center'>
                 <Guarantee darkMode={darkMode} />
             </div>
             <h1 className='text-white my-30 text-5xl font-semibold mx-auto text-center'>FAQ</h1>
-            <div className='my-8 w-[70vw] lg:w-[940px] mx-auto flex flex-col items-center justify-center gap-6'>
+            <div className='my-8 w-[90vw] lg:max-w-[940px] mx-auto flex flex-col items-center justify-center gap-6'>
                 {
                     FAQ && FAQ.map((faq, index) => {
                         return <CustomAccordian key={index} {...faq} />

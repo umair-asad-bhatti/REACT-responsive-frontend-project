@@ -34,21 +34,20 @@ module.exports = {
             transform: 'translateX(0px)',
           },
         },
-
-        'slide-fwd': {
+        'fade-in-out': {
           '0%': {
-            '-webkit-transform': 'translateZ(0px)',
-            transform: 'translateZ(0px)',
+
+            opacity: '0',
           },
           '100%': {
-            '-webkit-transform': 'translateZ(160px)',
-            transform: 'translateZ(160px)',
+
+            transform: '1',
           },
         },
       },
       animation: {
         'slide-in': 'slide-in 0.5s ease-out',
-        'slide-fwd': ' slide-fwd 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
+        'fade': 'fade-in-out 1s ease-in-out infinite alternate',
       },
       transitionProperty: {
         height: 'height',
