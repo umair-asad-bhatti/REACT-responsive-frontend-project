@@ -7,7 +7,7 @@ const CustomAccordian = ({ question, answer }) => {
         setShow(!show)
     }
     return (
-        <div style={{ transition: 'height 0.5s ease' }} className='w-[70vw] shadow-sm rounded-md gap-8 p-8 transition-height  duration-500 ease-in-out dark:bg-blue-darkmd bg-white flex flex-col items-center justify-center'>
+        <div style={{ transition: 'height 0.5s ease' }} className='w-full shadow-sm rounded-md gap-8 p-8 transition-height  duration-500 ease-in-out dark:bg-blue-darkmd bg-white flex flex-col items-center justify-center'>
             <div className='w-full flex items-center justify-between'>
                 <div className='flex items-center justify-center'>
                     <h1 className='dark:text-white font-semibold text-2xl text-blue-darkmd'>{question}</h1>

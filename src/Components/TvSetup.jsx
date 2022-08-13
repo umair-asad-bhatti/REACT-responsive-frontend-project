@@ -58,7 +58,7 @@ const TvSetup = () => {
 
                 </div>
                 {/* right image */}
-                <div className='flex items-center justify-center '>
+                <div className='flex items-center justify-center w-auto'>
                     <div className='md:w-[40%] w-auto'>
                         <img src={MobileSetupImage} alt="" />
                     </div>

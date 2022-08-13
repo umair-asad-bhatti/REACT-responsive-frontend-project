@@ -28,14 +28,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                     </Link>
 
                 </div>
-                <div className='flex items-center justify-between text-white font-medium gap-6'>
+                <div className='md:flex  md:justify-center text-white font-medium gap-6 '>
                     <Link to='/channel'><p >CHANNELS</p></Link>
                     <Link to='/setup'><p >SETUP</p></Link>
                     <Link to='/reseller'><p >RESELLERS</p></Link>
                     <Link to='/tutorial'><p >TUTORIALS</p></Link>
-
                 </div>
-                <div className='flex items-center justify-between gap-4 relative'>
+                <div className='flex items-center  md:w-[35%]  justify-end gap-4 relative'>
                     <button type='button'
                         className='text-blue-lightmd-blue bg-white px-2 py-1 rounded-sm font-semibold'>
                         LOG IN

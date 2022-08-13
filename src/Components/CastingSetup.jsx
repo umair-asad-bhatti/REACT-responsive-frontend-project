@@ -4,10 +4,10 @@ import AppleAirPlay from '../assets/AppleAirPlay.svg'
 import MiraCast from '../assets/Miracast.png'
 const CastingSetup = () => {
     return (
-        <div>
+        <div className='flex items-start justify-center w-auto flex-col max-w-full'>
             <h1 className='text-2xl font-semibold'>Cast Your IPTV with Any  TV Screen</h1>
             <p className='my-4'>Explore TV in all your Devices</p>
-            <div className='w-[70vw] flex items-center justify-start gap-24 my-6'>
+            <div className='flex items-between justify-start gap-24 my-6'>
                 <div className='flex flex-col items-center justify-center gap-2'>
                     <h1 className='my-4 text-2xl font-semibold'>Google ChromCast</h1>
                     <img src={ChromeCastImage} alt="" />

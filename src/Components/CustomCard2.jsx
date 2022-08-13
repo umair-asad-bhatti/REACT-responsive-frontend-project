@@ -3,7 +3,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 
 const CustomCard2 = ({ mainHeading, subHeading, subPara, buttonHeading, image }) => {
     return (
-        <div className='flex flex-row items-center justify-center gap-4 bg-white dark:bg-blue-darkmd py-10 px-6 flex-wrap w-[70vw] rounded-md shadow-sm'>
+        <div className='flex flex-row items-center justify-center gap-4 bg-white dark:bg-blue-darkmd py-10 px-6 flex-wrap w-full rounded-md shadow-sm'>
             <div className='flex items-center justify-center p-4 w-[500px]' >
                 <img src={image} alt="picture" />
             </div>

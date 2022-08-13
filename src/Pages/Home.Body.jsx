@@ -112,20 +112,21 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
         <>
 
             {/* Hero headings */}
-            < div className='my-20 p-2' >
+            < div className='mt-20 p-2' >
                 <h1 className='text-white  font-bold md:text-6xl text-5xl md:text-center'>DISCOVER THE #1 IPTV PROVIDER</h1>
-                <h2 className='md:text-center font-bold my-8 text-white  text-lg md:w-3/5 mx-auto'>Today, we are revolutionizing the way you access IPTV. With +8000 channels and thousands of VOD, you'll be watching IPTV in a radically new, intelligent, and intuitive way</h2>
+                <h2 className='md:text-center font-bold my-8 text-white  text-lg md:w-3/5 lg:w-[900px] mx-auto'>Today, we are revolutionizing the way you access IPTV. With +8000 channels and thousands of VOD, you'll be watching IPTV in a radically new, intelligent, and intuitive way</h2>
             </div >
             {/* Button */}
-            < div className='flex items-center justify-center' >
+            < div className='flex items-center justify-center flex-col' >
                 <button type='button' className=' py-2 px-16 rounded-md shadow-sm  bg-green-200 text-white'>JOIN US NOW</button>
+                <p className='text-white mt-2'>7 Days Money Back Guarantee</p>
             </div >
             {/* Main image */}
             < div className='md:flex hidden items-center justify-center my-12' >
                 <img className='w-[900px] h-[450px]' src={MainPic} alt="" />
             </div >
             {/* ICONS section */}
-            < div className='my-12 h-auto md:my-8 dark:bg-blue-darkmd bg-white w-[70vw] mx-auto flex flex-row items-center justify-center flex-wrap shadow-md rounded-md p-8 gap-10' >
+            < div className='my-12 h-auto md:my-8 dark:bg-blue-darkmd bg-white w-[70vw] lg:w-[940px] mx-auto flex flex-row items-center justify-center flex-wrap shadow-md rounded-md p-8 gap-10' >
                 <div className='flex  gap-2 items-center justify-center'>
                     <img src={player} alt="" />
                     <h1 className='w-24 md:font-semibold md:text-xl dark:text-white text-blue-darkmd'>8000+ TV Channels</h1>
@@ -146,7 +147,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
             </div >
             {/* Flex section */}
 
-            <div className='my-16 h-auto md:my-28 dark:bg-blue-darkmd bg-white w-[70vw] mx-auto flex flex-row items-center justify-center flex-wrap shadow-md  rounded-md py-6 px-4 gap-10'>
+            <div className='my-16 h-auto md:my-28 dark:bg-blue-darkmd bg-white w-[70vw] lg:w-[940px] mx-auto flex flex-row items-center justify-center flex-wrap shadow-md  rounded-md py-6 px-4 gap-10'>
 
                 {
                     CustomHeadingRawData.map((item) => {
@@ -155,7 +156,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                     })
                 }
             </div>
-            <div className='gap-8 flex flex-col mx-auto  items-center justify-center  w-[70vw]'>
+            <div className='gap-8 flex flex-col mx-auto  items-center justify-center  w-[70vw] lg:w-[940px]'>
 
                 <div className='w-full flex flex-row items-center justify-start gap-4'>
                     <h1 className='text-white font-bold text-4xl'>Uptime</h1>
@@ -172,7 +173,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                 </div>
             </div>
             {/* Three cards on a column with image with flex */}
-            <div className='my-20 w-[70vw0 h-auto flex flex-col items-center justify-center gap-8'>
+            <div className='my-20 w-[70vw]  lg:w-[940px] mx-auto h-auto flex flex-col items-center justify-center gap-8'>
                 <CustomCard1 mainHeading={"8000+"} subHeading="Live Tv Channels" subPara={CustomCard1Para} buttonHeading="Discover Channel List" image={mainimage4} />
                 <CustomCard2 mainHeading={"EPG"} subHeading="In Most Channels" subPara={CustomCard1Para} buttonHeading="Discover Channel List" image={mainimage3} />
                 <CustomCard1 mainHeading={"Thousands"} subHeading="Of Movies and Series" subPara={CustomCard1Para} buttonHeading="join Us Now" image={mainimage2} />
@@ -204,9 +205,8 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                 </div>
             </div> */}
             {/* Custom card slider */}
-            <div className='z-10'>
-                <div className='relative h-[300px] w-[90vw] mx-auto z-10 items-center overflow-x-hidden justify-center '>
-
+            <div className='z-10 '>
+                <div className='relative h-[300px] md:w-[90vw] lg:w-[900px] mx-auto z-10 items-center overflow-x-hidden justify-center '>
                     <div onClick={handlePrevious} className='absolute top-[50%] translate-y-[-50%] left-2 md:left-32'><AiOutlineArrowLeft color='white' fontSize={30} /></div>
                     {
                         customSmallCaardData.map((item, index) => {
@@ -240,33 +240,35 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                 </div>
 
             </div>
-            <div className='w-[40vw] my-8 p-4 rounded-lg shadow-md mx-auto bg-green-500 hidden md:flex items-center justify-center flex-col '>
+            <div className='w-[40vw] lg:w-[500px] mt-8  p-4 rounded-lg shadow-md mx-auto bg-green-500 hidden md:flex items-center justify-center flex-col '>
                 <div className='flex items-center justify-center flex-col'>
                     <button type='button' className='w-'>
                         <h1 className='text-white text-3xl font-bold'>Get My Instant Access Now</h1>
                     </button>
                 </div>
-            </div>
-            <p className='text-white font-medium text-center'>30 Day Money Back Guarantee</p>
 
-            <div className='mx-auto my-28 w-[80vw] flex items-center justify-center'>
+            </div>
+            <p className='text-white font-medium text-center my-2'>30 Day Money Back Guarantee</p>
+            <div className='mx-auto my-28 w-[80vw] lg:w-[940px] flex items-center justify-center'>
                 <Guarantee darkMode={darkMode} />
             </div>
             <h1 className='text-white my-30 text-5xl font-semibold mx-auto text-center'>FAQ</h1>
-            <div className='my-8 w-[70vw] mx-auto flex flex-col items-center justify-center gap-6'>
+            <div className='my-8 w-[70vw] lg:w-[940px] mx-auto flex flex-col items-center justify-center gap-6'>
                 {
                     FAQ && FAQ.map((faq, index) => {
                         return <CustomAccordian key={index} {...faq} />
                     })
                 }
             </div>
-            <div className='w-[40vw] my-8 p-4 rounded-lg shadow-md mx-auto bg-green-500 hidden md:flex items-center justify-center flex-col '>
+            <div className='w-[40vw] lg:w-[500px] mt-8 p-4 rounded-lg shadow-md mx-auto bg-green-500 hidden md:flex items-center justify-center flex-col '>
                 <div className='flex items-center justify-center flex-col'>
                     <button type='button' className='w-'>
                         <h1 className='text-white text-3xl font-bold'>Get My Instant Access Now</h1>
+
                     </button>
                 </div>
             </div>
+            <p className='text-white  mx-auto w-max mt-2'>7 Days Money Back Guarantee</p>
         </>
     )
 }

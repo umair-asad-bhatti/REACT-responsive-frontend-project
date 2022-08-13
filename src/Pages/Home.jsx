@@ -29,14 +29,14 @@ const Home = ({ darkMode, setDarkMode }) => {
     }
     window.addEventListener('scroll', changeNavBg);
     return (
-        <div className='flex items-center w-screen justify-center'>
+        <div className='flex items-center w-full justify-center'>
             {/* Pc version navbar */}
             <div>
-                <div className='lg:block w-full z-20 sticky top-0 hidden'>
+                <div className='lg:block w-[100vw] z-20 sticky top-0 hidden'>
                     <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
                 </div>
                 {/* Mobile version Navbar expandable */}
-                <div className={`lg:hidden mx-auto z-20  flex justify-between items-center px-4 py-4 w-full fixed top-0 ${Scrolled ? 'bg-blue-lightmd' : ''}  ${Scrolled ? 'dark:bg-blue-darkmd' : ''}`}>
+                <div className={`z-auto lg:hidden mx-auto   flex justify-between items-center px-4 py-4 w-full fixed top-0 ${Scrolled ? 'bg-blue-lightmd' : ''}  ${Scrolled ? 'dark:bg-blue-darkmd' : ''}`}>
                     <img src={Logo} alt="Logo" />
                     <div className='rounded-full flex items-center justify-center w-8 h-8 bg-white '>
                         <div className='p-4'>
@@ -105,7 +105,7 @@ const Home = ({ darkMode, setDarkMode }) => {
                     <Route path='/tutorial' element={<Tutorial />} />
                 </Routes>
 
-                <div className='w-full dark:bg-blue-darkmd bg-white p-8'>
+                <div className='w-full dark:bg-blue-darkmd bg-white p-8 mt-12'>
                     <Footer />
                 </div>
             </div>

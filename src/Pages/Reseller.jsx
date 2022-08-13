@@ -16,9 +16,9 @@ const Reseller = ({ darkMode, setDarkMode }) => {
         setData(Data)
     }, [])
     return (
-        < div className='w-screen ' >
-            <div className='w-[80vw] mx-auto flex flex-wrap my-20   items-center justify-center'>
-                <div className='md:w-[50%]  flex-col gap-8 flex items-start justify-around flex-wrap'>
+        < div className='flex items-center justify-center flex-col'>
+            <div className=' p-6  mx-auto flex flex-wrap flex-row my-20 items-center justify-center'>
+                <div className='max-w-[500px] flex-col gap-8 flex items-start justify-around flex-wrap'>
                     <div className='flex items-center justify-center'>
                         <h1 className='text-start text-white font-bold text-6xl'>The Worlds <span className='text-orange-600'>Best </span> IPTV Reseller Program</h1>
                     </div>
@@ -33,14 +33,14 @@ const Reseller = ({ darkMode, setDarkMode }) => {
 
                     </div>
                 </div>
-                <div>
+                <div className='my-6'>
                     {
                         darkMode ? (<img src={Bitcoin} alt="" />) : (<img src={BitcoinLight} alt="" />)
                     }
 
                 </div>
             </div>
-            <div className='dark:bg-blue-darkmd bg-white w-[85vw] flex flex-col items-center justify-center gap-8  p-16 mx-auto shadow-sm rounded-md mt-14'>
+            <div className='dark:bg-blue-darkmd bg-white w-[85vw] lg:w-[940px] flex flex-col items-center justify-center gap-8  p-16 mx-auto shadow-sm rounded-md mt-14'>
 
                 <div className='flex flex-col items-center justify-center gap-3'>
                     <h1 className='text-center  dark:text-white text-blue-darkmd font-bold text-3xl'>Why should You Select Out IPTV Reseller Prgoram?</h1>
@@ -54,7 +54,7 @@ const Reseller = ({ darkMode, setDarkMode }) => {
                     }
                 </div>
             </div>
-            <div className='md:w-[85vw] w-[90vw] mx-auto my-20 py-8 px-4 dark:bg-blue-darkmd bg-white flex items-center flex-col justify-between gap-8 shadow-sm rounded-md'>
+            <div className='md:w-[85vw] w-[90vw] lg:w-[950px] mx-auto my-20 py-8 px-4 dark:bg-blue-darkmd bg-white flex items-center flex-col justify-between gap-8 shadow-sm rounded-md'>
                 <div className='flex flex-col items-center justify-center gap-4'>
                     <h1 className='dark:text-white text-blue-lightmd font-bold text-3xl'>Pay-As-You-Go pricing</h1>
                     <p className='dark:text-white text-blue-lightmd font-light md:px-32 px-4 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim praesentium velit nam dicta ullam. Vitae dignissimos delectus illum sint laboriosam totam! Delectus, exercitationem assumenda voluptas culpa ut aperiam nobis?</p>
@@ -86,7 +86,7 @@ const Reseller = ({ darkMode, setDarkMode }) => {
             </div>
             {/* FAQ */}
             <h1 className='text-white mt-12 text-5xl font-semibold mx-auto text-center'>FAQ</h1>
-            <div className='my-8 w-[70vw] mx-auto flex flex-col items-center justify-center gap-6'>
+            <div className='my-8 lg:w-[940px] w-[70vw] mx-auto flex flex-col items-center justify-center gap-6'>
                 {
                     FAQ && FAQ.map((faq, index) => {
                         return <CustomAccordian key={index} {...faq} />

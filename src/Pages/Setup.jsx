@@ -12,8 +12,8 @@ import CastingSetup from '../Components/CastingSetup'
 
 const Setup = ({ darkMode, setDarkMode }) => {
     const [current, setCurrent] = useState('Web');
-    const notActiveBtn = 'transition-all duration-300 ease-in-out dark:hover:bg-white hover:bg-blue-darkmdbg hover:text-white dark:hover:text-blue-lightmd md:w-[200px] w-full md:p-6 p-4 dark:text-white text-blue-lightmd  rounded-md dark:bg-blue-darkmdbg bg-white shadow-sm flex flex-col items-center justify-center gap-4'
-    const Activebtn = 'transition-all duration-300 ease-in-out dark:hover:bg-white dark:hover:text-blue-lightmd md:w-[200px] w-full md:p-6 p-4 rounded-md dark:text-white text-blue-lightmd dark:bg-white dark:text-blue-darkmdbg bg-blue-darkmdbg text-slate-100 shadow-sm flex flex-col items-center justify-center gap-4'
+    const notActiveBtn = 'transition-all duration-300 ease-in-out dark:hover:bg-white hover:bg-blue-darkmdbg hover:text-white dark:hover:text-blue-lightmd md:w-[180px] w-full md:p-6 p-4 dark:text-white text-blue-lightmd  rounded-md dark:bg-blue-darkmdbg bg-white shadow-sm flex flex-col items-center justify-center gap-4'
+    const Activebtn = 'transition-all duration-300 ease-in-out dark:hover:bg-white dark:hover:text-blue-lightmd md:w-[180px] w-full md:p-6 p-4 rounded-md dark:text-white text-blue-lightmd dark:bg-white dark:text-blue-darkmdbg bg-blue-darkmdbg text-slate-100 shadow-sm flex flex-col items-center justify-center gap-4'
 
     //references
     const WebRef = useRef(null);
@@ -24,13 +24,13 @@ const Setup = ({ darkMode, setDarkMode }) => {
 
 
     return (
-        <div className='w-screen'>
+        <div className='max-w-screen p-8 md:p-0  md:w-[90%] lg:w-[1100px] mx-auto flex flex-col items-center justify-center'>
 
-            <h1 className='text-center font-bold text-5xl mt-20  text-white'>DOWNLOAD THE BEST IPTV APP</h1>
+            <h1 className='text-center font-bold text-5xl  mt-20  text-white'>DOWNLOAD THE BEST IPTV APP</h1>
             <p className='text-center font-bold text-2xl mt-4  text-white'>Our Apps Work Flawlessly on tv, mobile and browser</p>
 
-            <div className='md:w-[90vw]   w-[90vw] my-24  rounded-mg shadow-sm mx-auto flex items-center justify-between flex-col gap-8'>
-                <div className='md:w-auto w-full flex-wrap  md:flex-row flex-col flex items-center justify-between gap-8'>
+            <div className='my-24  w-full flex-wrap rounded-mg shadow-sm mx-auto flex items-center justify-between flex-col gap-8'>
+                <div className='w-full  p-2   flex-wrap md:flex-row flex-col flex items-center justify-between gap-8'>
 
                     {/* /icon 1 */}
                     <div onClick={(e) => {
@@ -99,7 +99,7 @@ const Setup = ({ darkMode, setDarkMode }) => {
                     </div>
                 </div>
             </div>
-            <div className='w-[80vw] px-16 py-4 my-8  dark:bg-blue-darkmd bg-white dark:text-white transition-all duration-300 ease-in-out text-blue-lightmd rounded-lg shadow-lg mx-auto flex items-center justify-center p-8'>
+            <div className=' px-10 py-4 my-8 max-w-full md:w-[80%] mx-auto lg:w-[1100px] dark:bg-blue-darkmd bg-white dark:text-white transition-all duration-300 ease-in-out text-blue-lightmd rounded-lg shadow-lg mx-auto flex items-center justify-center p-8'>
                 {current === 'Web' ? <div ref={WebRef}><WebSetup /></div> : ''}
                 {current === 'Mobile' ? <div ref={MobileRef}> <MobileSetup /></div> : ''}
                 {current === 'TV' ? <div ref={TvRef}><TvSetup /></div> : ''}
