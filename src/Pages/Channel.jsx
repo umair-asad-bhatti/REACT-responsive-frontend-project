@@ -124,7 +124,7 @@ const Channel = () => {
         <div className='md:w-screen lg:w-auto  my-20 '>
             <h1 className='text-center font-bold text-6xl text-white'>Our Full IPTV Channels List</h1>
             <p className='text-white mt-6 text-center font-semibold text-lg'>An Easy Access And Super Simple IPTV Services For Your Devives</p>
-            <div className='flex md:flex-row my-12  flex-col items-center justify-center gap-4  md:w-[90%] lg:w-[1400px] mx-auto'>
+            <div className='flex md:flex-row my-12  flex-col items-center justify-center gap-4 sm:w-auto  md:w-[90%] lg:w-[1400px] mx-auto'>
                 {/* left menu */}
                 <div className='dark:bg-[#040E2E] overflowy p-1  md:h-[600px] md:w-[30%] w-[90%] flex flex-col items-center justify-start  gap-2 bg-[#FFFFFF] rounded-md shadow-md'>
                     {/* /button 1 */}
