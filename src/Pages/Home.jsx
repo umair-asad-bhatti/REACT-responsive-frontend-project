@@ -48,7 +48,7 @@ const Home = ({ darkMode, setDarkMode }) => {
                 {/* Mobile version sidebar*/}
                 {
                     toggleSidebar && (
-                        <div className='lg:hidden fixed gap-4 dark:bg-blue-darkmd bg-blue-lightmd right-0 transition-all duration-300 ease-in-out top-0 w-4/5 f-full text-gray-50 overflow-y-auto shadow-md z-10'>
+                        <div className='animate-slide-in lg:hidden fixed gap-4 dark:bg-blue-darkmd bg-blue-lightmd right-0 transition-all duration-300 ease-in-out top-0 w-4/5 f-full text-gray-50 overflow-y-auto shadow-md z-10'>
                             <div className='my-4 relative flex flex-col justify-between items-center gap-4 w-full h-full'>
                                 <div className='absolute right-0 -top-2 bottom-0 text-end p-4'>
 

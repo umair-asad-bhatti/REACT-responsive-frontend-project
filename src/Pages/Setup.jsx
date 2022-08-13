@@ -99,7 +99,7 @@ const Setup = ({ darkMode, setDarkMode }) => {
                     </div>
                 </div>
             </div>
-            <div className=' px-10 py-4 my-8 max-w-full md:w-[80%] mx-auto lg:w-[1100px] dark:bg-blue-darkmd bg-white dark:text-white transition-all duration-300 ease-in-out text-blue-lightmd rounded-lg shadow-lg mx-auto flex items-center justify-center p-8'>
+            <div className='my-8 max-w-full md:w-[80%]  lg:w-[1100px] dark:bg-blue-darkmd bg-white dark:text-white transition-all duration-300 ease-in-out text-blue-lightmd rounded-lg shadow-lg mx-auto flex items-center justify-center p-8'>
                 {current === 'Web' ? <div ref={WebRef}><WebSetup /></div> : ''}
                 {current === 'Mobile' ? <div ref={MobileRef}> <MobileSetup /></div> : ''}
                 {current === 'TV' ? <div ref={TvRef}><TvSetup /></div> : ''}
