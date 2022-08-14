@@ -48,7 +48,7 @@ const Home = ({ darkMode, setDarkMode }) => {
                 {/* Mobile version sidebar*/}
                 {
                     toggleSidebar && (
-                        <div className='z-50 animate-slide-in lg:hidden fixed gap-4 dark:bg-blue-darkmd bg-blue-lightmd right-0 transition-all duration-300 ease-in-out top-0 w-4/5 f-full text-gray-50 overflow-y-auto shadow-md '>
+                        <div className='z-50 h-[100vh] animate-slide-in lg:hidden fixed gap-4 dark:bg-blue-darkmd bg-blue-lightmd right-0 transition-all duration-300 ease-in-out top-0 w-4/5 f-full text-gray-50 overflow-hidden shadow-md '>
                             <div className='my-4 relative flex flex-col justify-between items-center gap-4 w-full h-full'>
                                 <div className='absolute right-0 -top-2 bottom-0 text-end p-4'>
 
@@ -80,7 +80,7 @@ const Home = ({ darkMode, setDarkMode }) => {
                                         }
                                     </button>
                                 </div>
-                                <div className={`dark:bg-[#070F24] p-4 bg-[#122250] w-full flex flex-col items-center justify-center gap-5`}>
+                                <div className={`dark:bg-[#070F24] p-4 mb-8 bg-[#122250] w-full flex flex-col items-center justify-center gap-5`}>
                                     <button type='button' className='bg-white rounded-sm shadow-sm w-full px-4 py-2 text-blue-darkmd '>
                                         LOG IN
                                     </button>
