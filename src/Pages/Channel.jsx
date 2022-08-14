@@ -126,7 +126,7 @@ const Channel = () => {
             <p className='text-white mt-6 text-center font-semibold text-lg'>An Easy Access And Super Simple IPTV Services For Your Devives</p>
             <div className='flex md:flex-row my-12  flex-col items-center justify-center gap-4 sm:w-auto  md:w-[90%] lg:max-w-[1400px] mx-auto'>
                 {/* left menu */}
-                <div className='dark:bg-[#040E2E]  overflow-h p-4 px-1  md:h-[600px] md:w-[20%] w-[90%] flex flex-col items-center justify-start  gap-2 bg-[#FFFFFF] rounded-md shadow-md'>
+                <div className='dark:bg-[#040E2E]  overflow-h p-2 px-2  md:h-[600px] md:w-[20%] w-[90%] flex flex-col items-center justify-start  gap-2 bg-[#FFFFFF] rounded-md shadow-md'>
                     {/* /button 1 */}
                     <div onClick={(e) => { setCurrent('Animals'); }}
                         className={` ${current == 'Animals' ? Activebtn : notActiveBtn} `}>
