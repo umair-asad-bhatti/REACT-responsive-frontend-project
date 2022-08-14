@@ -57,18 +57,14 @@ const Home = ({ darkMode, setDarkMode }) => {
                                 <Link to='/'><img src={Logo} alt="" className='h-8' /></Link>
 
                                 <div className='flex py-4 border-b border-gray-50  gap-8 flex-col justify-start items-start font-extrabold font-2xl w-4/5 '>
+                                    <Link to='/'><h1 >HOME</h1></Link>
                                     <Link to='/channel'><h1 >CHANNELS</h1></Link>
                                     <Link to='/'><h1 >SETUP</h1></Link>
                                     <Link to='/reseller'><h1 >RESELLERS</h1></Link>
-                                    <Link to='/'><h1 >AFFILIATES</h1></Link>
+
                                 </div>
                                 <div className='my-4 flex flex-col items-start w-4/5 justify-center gap-6'>
-                                    <button>
-                                        <div className='flex justify-center items-center gap-2'>
-                                            <TbGridDots fontSize={25} />
-                                            <h1>IPV Tools</h1>
-                                        </div>
-                                    </button>
+
                                     <button type='button' onClick={() => setDarkMode(!darkMode)}>
                                         {
                                             darkMode ?

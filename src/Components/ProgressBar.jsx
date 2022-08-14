@@ -18,7 +18,7 @@ const ProgressBar = ({ mainHeading, perHeading, instruction }) => {
                 </div>
 
             </div>
-            <h1 className='text-green-600 font-bold text-lg md:block hidden'>{instruction}</h1>
+            <h1 className='text-green-600 font-bold text-lg md:block'>{instruction}</h1>
 
         </div>
     )
