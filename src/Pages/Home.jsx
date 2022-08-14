@@ -36,7 +36,7 @@ const Home = ({ darkMode, setDarkMode }) => {
                     <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
                 </div>
                 {/* Mobile version Navbar expandable */}
-                <div className={`z-20 lg:hidden mx-auto w-screen   flex justify-between items-center px-4 py-4 w-full fixed top-0 ${Scrolled ? 'bg-blue-lightmd' : ''}  ${Scrolled ? 'dark:bg-blue-darkmd' : ''}`}>
+                <div className={`z-20 lg:hidden mx-auto    flex justify-between items-center px-4 py-4 w-full fixed top-0 ${Scrolled ? 'bg-blue-lightmd' : ''}  ${Scrolled ? 'dark:bg-blue-darkmd' : ''}`}>
                     <img src={Logo} alt="Logo" />
                     <div className='rounded-full flex items-center justify-center w-8 h-8 bg-white '>
                         <div className='p-4'>
@@ -48,7 +48,7 @@ const Home = ({ darkMode, setDarkMode }) => {
                 {/* Mobile version sidebar*/}
                 {
                     toggleSidebar && (
-                        <div className='z-50 animate-slide-in lg:hidden fixed gap-4 dark:bg-blue-darkmd bg-blue-lightmd right-0 transition-all duration-300 ease-in-out top-0 w-4/5 f-full text-gray-50 overflow-y-auto shadow-md z-10'>
+                        <div className='z-50 animate-slide-in lg:hidden fixed gap-4 dark:bg-blue-darkmd bg-blue-lightmd right-0 transition-all duration-300 ease-in-out top-0 w-4/5 f-full text-gray-50 overflow-y-auto shadow-md '>
                             <div className='my-4 relative flex flex-col justify-between items-center gap-4 w-full h-full'>
                                 <div className='absolute right-0 -top-2 bottom-0 text-end p-4'>
 
@@ -101,7 +101,7 @@ const Home = ({ darkMode, setDarkMode }) => {
                     <Route path='/tutorial' element={<Tutorial />} />
                 </Routes>
 
-                <div className='w-full dark:bg-blue-darkmd text-white  bg-blue-lightmd p-8 mt-12'>
+                <div className='w-full dark:bg-blue-darkmd text-white  bg-blue-lightmd p-4 mt-12'>
                     <Footer />
                 </div>
             </div>
