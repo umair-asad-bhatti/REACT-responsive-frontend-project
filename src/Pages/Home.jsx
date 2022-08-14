@@ -101,7 +101,7 @@ const Home = ({ darkMode, setDarkMode }) => {
                     <Route path='/tutorial' element={<Tutorial />} />
                 </Routes>
 
-                <div className='w-full dark:bg-blue-darkmd bg-white p-8 mt-12'>
+                <div className='w-full dark:bg-blue-darkmd text-white  bg-blue-lightmd p-8 mt-12'>
                     <Footer />
                 </div>
             </div>
