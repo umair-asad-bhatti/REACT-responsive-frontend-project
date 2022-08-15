@@ -29,20 +29,19 @@ const Home = ({ darkMode, setDarkMode }) => {
     }
     window.addEventListener('scroll', changeNavBg);
     return (
-        <div className='flex items-center w-full justify-center'>
+        <div className='flex items-center justify-center'>
             {/* Pc version navbar */}
             <div>
                 <div className='lg:block w-[100vw] z-20 sticky top-0 hidden'>
                     <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
                 </div>
                 {/* Mobile version Navbar expandable */}
-                <div className={`z-20 lg:hidden mx-auto    flex justify-between items-center px-4 py-4 w-full fixed top-0 ${Scrolled ? 'bg-blue-lightmd' : ''}  ${Scrolled ? 'dark:bg-blue-darkmd' : ''}`}>
+                <div className={`z-20 lg:hidden   flex justify-between items-center px-4 py-4  fixed left-0 right-0 w-full top-0 ${Scrolled ? 'bg-blue-lightmd' : ''}  ${Scrolled ? 'dark:bg-blue-darkmd' : ''}`}>
                     <img src={Logo} alt="Logo" />
                     <div className='rounded-full flex items-center justify-center w-8 h-8 bg-white '>
                         <div className='p-4'>
                             <FiMenu onClick={() => setToggleSidebar(!toggleSidebar)} fontSize={20} color='blue-darkmd' />
                         </div>
-
                     </div>
                 </div>
                 {/* Mobile version sidebar*/}
@@ -59,7 +58,7 @@ const Home = ({ darkMode, setDarkMode }) => {
                                 <div className='flex py-4 border-b border-gray-50  gap-8 flex-col justify-start items-start font-extrabold font-2xl w-4/5 '>
                                     <Link to='/'><h1 >HOME</h1></Link>
                                     <Link to='/channel'><h1 >CHANNELS</h1></Link>
-                                    <Link to='/'><h1 >SETUP</h1></Link>
+                                    <Link to='/setup'><h1 >SETUP</h1></Link>
                                     <Link to='/reseller'><h1 >RESELLERS</h1></Link>
 
                                 </div>
@@ -93,6 +92,9 @@ const Home = ({ darkMode, setDarkMode }) => {
                         </div >
                     )
                 }
+                <div className='w-screen'>
+
+                </div>
                 <Routes>
                     <Route path='/' element={<HomeBody darkMode={darkMode} setDarkMode={setDarkMode} />} exact />
                     <Route path='/channel' element={<Channel />} />

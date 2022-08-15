@@ -3,7 +3,7 @@ import greenStar from '../assets/greenStar.svg'
 
 const CustomSmallCard = ({ heading, subHeading, name, time }) => {
     return (
-        <div className='flex gap-8 flex-col items-center justify-between shadow-md rounded-lg px-6 py-4 dark:bg-blue-darkmd bg-white w-[300px] h-[270px]'>
+        <div className='flex gap-8 flex-col items-center justify-between shadow-md rounded-lg px-6 py-4 dark:bg-blue-darkmd bg-white max-w-[100%] h-[270px]'>
             <div className='w-full flex-wrap flex justify-between items-center'>
                 <div className='flex items-center justify-center gap-2'>
                     <img className='w-5' src={greenStar} alt="" />

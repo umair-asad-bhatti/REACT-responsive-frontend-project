@@ -152,9 +152,9 @@ const Channel = () => {
 
                 </div>
 
-                <div className='md:w-[50%] lg:max-w-[800px] w-[90%] p-6  rounded-md shadow-md h-[600px] overflow-hidden flex flex-col gap-8 items-start justify-start  dark:bg-blue-darkmd bg-[#FFFFFF] '>
+                <div className='md:w-[50%] lg:max-w-[800px] w-[90%] p-6 overflow-hidden  rounded-md shadow-md h-[600px]  flex flex-col gap-8 items-start justify-start  dark:bg-blue-darkmd bg-[#FFFFFF] '>
                     <div className='w-full  relative top-2'>
-                        <AiOutlineSearch fontSize={30} color='white' className='absolute right-4 top-[50%] translate-y-[-50%]' />
+                        <AiOutlineSearch fontSize={30} className='absolute right-4 top-[50%] translate-y-[-50%]' />
                         <input placeholder='Search' type="search " className='w-full border-none outline-none dark:text-white text-black  bg-[#E2E4E8] dark:bg-[#262F4A] p-2 px-4 rounded-md shadow-md' value={search} onChange={(e) => setSearch(e.target.value)} />
                     </div>
                     <div className='grid grid-cols-2 gap-2 '>

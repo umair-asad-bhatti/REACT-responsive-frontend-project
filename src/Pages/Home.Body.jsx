@@ -214,7 +214,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                     {
                         customSmallCaardData.map((item, index) => {
                             if (index == currentSlide)
-                                return <div className=' absolute left-[50%] translate-x-[-50%]'>
+                                return <div className=' absolute left-[50%] translate-x-[-50%] w-[60%]'>
                                     <CustomSmallCard key={index} {...item} />
                                 </div>
                         })
